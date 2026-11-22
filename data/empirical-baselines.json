@@ -1,0 +1,1582 @@
+{
+  "generatedAt": "2026-11-22T09:04:35.280Z",
+  "source": "OpenAlex Public Scholarly API (Pre-2022 Human 2015-2021 vs Post-2024 2024-2026) + Raw-LLM Comparator Battery",
+  "totals": {
+    "pre2022HumanPapers": 300,
+    "post2024RecentPapers": 300,
+    "rawLlmComparators": 6
+  },
+  "overall": {
+    "pre2022Human": {
+      "sampleCount": 300,
+      "totalWords": 61665,
+      "sentMean": {
+        "mean": 28.14,
+        "median": 24.655,
+        "p10": 18.235,
+        "p90": 33.517
+      },
+      "sentCV": {
+        "mean": 0.387,
+        "median": 0.377,
+        "p10": 0.22,
+        "p90": 0.551
+      },
+      "adjBurstiness": {
+        "mean": 0.481,
+        "median": 0.459,
+        "p10": 0.268,
+        "p90": 0.726
+      },
+      "shortSentPct": {
+        "mean": 7.111,
+        "median": 0,
+        "p10": 0,
+        "p90": 22.2
+      },
+      "longSentPct": {
+        "mean": 31.263,
+        "median": 25,
+        "p10": 6.26,
+        "p90": 66.7
+      },
+      "mattr50": {
+        "mean": 0.786,
+        "median": 0.791,
+        "p10": 0.727,
+        "p90": 0.842
+      },
+      "avgWordLen": {
+        "mean": 5.717,
+        "median": 5.69,
+        "p10": 5.269,
+        "p90": 6.2
+      },
+      "tier1ExcessPer1kPooled": 0.211,
+      "tier2InflatedPer1kPooled": 1.395,
+      "pctDocsWithTier1Excess": 3.67,
+      "explicitTransitionsPer1k": {
+        "mean": 0.844,
+        "median": 0,
+        "p10": 0,
+        "p90": 3.99
+      },
+      "trailingParticiplePer1k": {
+        "mean": 0.228,
+        "median": 0,
+        "p10": 0,
+        "p90": 0
+      },
+      "negativeParallelismPer1k": {
+        "mean": 0.15,
+        "median": 0,
+        "p10": 0,
+        "p90": 0
+      },
+      "triadsPer1k": {
+        "mean": 2.775,
+        "median": 0,
+        "p10": 0,
+        "p90": 9.367
+      },
+      "formulaicClichesPer1k": {
+        "mean": 0.041,
+        "median": 0,
+        "p10": 0,
+        "p90": 0
+      },
+      "emDashesPer1k": {
+        "mean": 0.631,
+        "median": 0,
+        "p10": 0,
+        "p90": 0
+      },
+      "passiveIndicatorPer1k": {
+        "mean": 9.968,
+        "median": 8.435,
+        "p10": 0,
+        "p90": 22.258
+      },
+      "firstPersonPer1k": {
+        "mean": 13.414,
+        "median": 9.76,
+        "p10": 0,
+        "p90": 32.534
+      },
+      "aiRiskScore": {
+        "mean": 14.124,
+        "median": 12.1,
+        "p10": 0,
+        "p90": 32.77
+      }
+    },
+    "post2024Recent": {
+      "sampleCount": 300,
+      "totalWords": 64982,
+      "sentMean": {
+        "mean": 27.438,
+        "median": 24,
+        "p10": 18.859,
+        "p90": 31.173
+      },
+      "sentCV": {
+        "mean": 0.365,
+        "median": 0.352,
+        "p10": 0.219,
+        "p90": 0.525
+      },
+      "adjBurstiness": {
+        "mean": 0.447,
+        "median": 0.427,
+        "p10": 0.237,
+        "p90": 0.687
+      },
+      "shortSentPct": {
+        "mean": 5.544,
+        "median": 0,
+        "p10": 0,
+        "p90": 16.77
+      },
+      "longSentPct": {
+        "mean": 26.891,
+        "median": 22.9,
+        "p10": 0,
+        "p90": 50
+      },
+      "mattr50": {
+        "mean": 0.798,
+        "median": 0.804,
+        "p10": 0.729,
+        "p90": 0.859
+      },
+      "avgWordLen": {
+        "mean": 5.986,
+        "median": 5.975,
+        "p10": 5.43,
+        "p90": 6.61
+      },
+      "tier1ExcessPer1kPooled": 1.231,
+      "tier2InflatedPer1kPooled": 3.462,
+      "pctDocsWithTier1Excess": 17.33,
+      "explicitTransitionsPer1k": {
+        "mean": 1.738,
+        "median": 0,
+        "p10": 0,
+        "p90": 6.857
+      },
+      "trailingParticiplePer1k": {
+        "mean": 1.648,
+        "median": 0,
+        "p10": 0,
+        "p90": 5.887
+      },
+      "negativeParallelismPer1k": {
+        "mean": 0.207,
+        "median": 0,
+        "p10": 0,
+        "p90": 0
+      },
+      "triadsPer1k": {
+        "mean": 3.722,
+        "median": 0,
+        "p10": 0,
+        "p90": 11.427
+      },
+      "formulaicClichesPer1k": {
+        "mean": 0.23,
+        "median": 0,
+        "p10": 0,
+        "p90": 0
+      },
+      "emDashesPer1k": {
+        "mean": 0.466,
+        "median": 0,
+        "p10": 0,
+        "p90": 0
+      },
+      "passiveIndicatorPer1k": {
+        "mean": 7.732,
+        "median": 6.015,
+        "p10": 0,
+        "p90": 19.448
+      },
+      "firstPersonPer1k": {
+        "mean": 10.092,
+        "median": 5.525,
+        "p10": 0,
+        "p90": 27.482
+      },
+      "aiRiskScore": {
+        "mean": 25.905,
+        "median": 19.4,
+        "p10": 0,
+        "p90": 61.19
+      }
+    },
+    "rawLlmComparator": {
+      "sampleCount": 6,
+      "totalWords": 676,
+      "sentMean": {
+        "mean": 19.373,
+        "median": 19.17,
+        "p10": 18.25,
+        "p90": 20.7
+      },
+      "sentCV": {
+        "mean": 0.163,
+        "median": 0.163,
+        "p10": 0.115,
+        "p90": 0.212
+      },
+      "adjBurstiness": {
+        "mean": 0.201,
+        "median": 0.218,
+        "p10": 0.107,
+        "p90": 0.277
+      },
+      "shortSentPct": {
+        "mean": 0,
+        "median": 0,
+        "p10": 0,
+        "p90": 0
+      },
+      "longSentPct": {
+        "mean": 0,
+        "median": 0,
+        "p10": 0,
+        "p90": 0
+      },
+      "mattr50": {
+        "mean": 0.945,
+        "median": 0.943,
+        "p10": 0.934,
+        "p90": 0.958
+      },
+      "avgWordLen": {
+        "mean": 7.21,
+        "median": 7.205,
+        "p10": 7.035,
+        "p90": 7.39
+      },
+      "tier1ExcessPer1kPooled": 53.254,
+      "tier2InflatedPer1kPooled": 47.337,
+      "pctDocsWithTier1Excess": 100,
+      "explicitTransitionsPer1k": {
+        "mean": 29.482,
+        "median": 28.04,
+        "p10": 26.79,
+        "p90": 33.615
+      },
+      "trailingParticiplePer1k": {
+        "mean": 10.382,
+        "median": 9.14,
+        "p10": 8.4,
+        "p90": 13.605
+      },
+      "negativeParallelismPer1k": {
+        "mean": 5.947,
+        "median": 8.7,
+        "p10": 0,
+        "p90": 9.14
+      },
+      "triadsPer1k": {
+        "mean": 7.498,
+        "median": 4.675,
+        "p10": 0,
+        "p90": 17.82
+      },
+      "formulaicClichesPer1k": {
+        "mean": 14.597,
+        "median": 13.01,
+        "p10": 9.14,
+        "p90": 21.64
+      },
+      "emDashesPer1k": {
+        "mean": 6.093,
+        "median": 8.93,
+        "p10": 0,
+        "p90": 9.35
+      },
+      "passiveIndicatorPer1k": {
+        "mean": 1.488,
+        "median": 0,
+        "p10": 0,
+        "p90": 4.465
+      },
+      "firstPersonPer1k": {
+        "mean": 4.358,
+        "median": 4.165,
+        "p10": 0,
+        "p90": 8.91
+      },
+      "aiRiskScore": {
+        "mean": 100,
+        "median": 100,
+        "p10": 100,
+        "p90": 100
+      }
+    }
+  },
+  "byDiscipline": {
+    "computer_science": {
+      "label": "Computer Science & Engineering",
+      "pre2022Human": {
+        "sampleCount": 50,
+        "totalWords": 9181,
+        "sentMean": {
+          "mean": 27.087,
+          "median": 23.655,
+          "p10": 18.925,
+          "p90": 30.633
+        },
+        "sentCV": {
+          "mean": 0.35,
+          "median": 0.333,
+          "p10": 0.186,
+          "p90": 0.507
+        },
+        "adjBurstiness": {
+          "mean": 0.434,
+          "median": 0.404,
+          "p10": 0.242,
+          "p90": 0.631
+        },
+        "shortSentPct": {
+          "mean": 4.47,
+          "median": 0,
+          "p10": 0,
+          "p90": 14.54
+        },
+        "longSentPct": {
+          "mean": 23.504,
+          "median": 20,
+          "p10": 0,
+          "p90": 50
+        },
+        "mattr50": {
+          "mean": 0.811,
+          "median": 0.808,
+          "p10": 0.773,
+          "p90": 0.854
+        },
+        "avgWordLen": {
+          "mean": 5.702,
+          "median": 5.71,
+          "p10": 5.29,
+          "p90": 6.07
+        },
+        "tier1ExcessPer1kPooled": 0.109,
+        "tier2InflatedPer1kPooled": 1.961,
+        "pctDocsWithTier1Excess": 2,
+        "explicitTransitionsPer1k": {
+          "mean": 0.82,
+          "median": 0,
+          "p10": 0,
+          "p90": 3.705
+        },
+        "trailingParticiplePer1k": {
+          "mean": 0.209,
+          "median": 0,
+          "p10": 0,
+          "p90": 0
+        },
+        "negativeParallelismPer1k": {
+          "mean": 0.582,
+          "median": 0,
+          "p10": 0,
+          "p90": 0.495
+        },
+        "triadsPer1k": {
+          "mean": 0.957,
+          "median": 0,
+          "p10": 0,
+          "p90": 4.14
+        },
+        "formulaicClichesPer1k": {
+          "mean": 0,
+          "median": 0,
+          "p10": 0,
+          "p90": 0
+        },
+        "emDashesPer1k": {
+          "mean": 0.216,
+          "median": 0,
+          "p10": 0,
+          "p90": 0
+        },
+        "passiveIndicatorPer1k": {
+          "mean": 7.297,
+          "median": 5.92,
+          "p10": 0,
+          "p90": 16.139
+        },
+        "firstPersonPer1k": {
+          "mean": 20.271,
+          "median": 20.675,
+          "p10": 0,
+          "p90": 34.646
+        },
+        "aiRiskScore": {
+          "mean": 17.456,
+          "median": 16.85,
+          "p10": 0,
+          "p90": 32.34
+        }
+      },
+      "post2024Recent": {
+        "sampleCount": 50,
+        "totalWords": 9744,
+        "sentMean": {
+          "mean": 25.242,
+          "median": 23.965,
+          "p10": 19.27,
+          "p90": 34.205
+        },
+        "sentCV": {
+          "mean": 0.336,
+          "median": 0.311,
+          "p10": 0.22,
+          "p90": 0.454
+        },
+        "adjBurstiness": {
+          "mean": 0.403,
+          "median": 0.384,
+          "p10": 0.253,
+          "p90": 0.531
+        },
+        "shortSentPct": {
+          "mean": 3.856,
+          "median": 0,
+          "p10": 0,
+          "p90": 12.68
+        },
+        "longSentPct": {
+          "mean": 24.044,
+          "median": 19.1,
+          "p10": 0,
+          "p90": 57.39
+        },
+        "mattr50": {
+          "mean": 0.819,
+          "median": 0.819,
+          "p10": 0.77,
+          "p90": 0.877
+        },
+        "avgWordLen": {
+          "mean": 6.026,
+          "median": 5.985,
+          "p10": 5.49,
+          "p90": 6.467
+        },
+        "tier1ExcessPer1kPooled": 1.334,
+        "tier2InflatedPer1kPooled": 5.952,
+        "pctDocsWithTier1Excess": 20,
+        "explicitTransitionsPer1k": {
+          "mean": 1.985,
+          "median": 0,
+          "p10": 0,
+          "p90": 7.373
+        },
+        "trailingParticiplePer1k": {
+          "mean": 1.841,
+          "median": 0,
+          "p10": 0,
+          "p90": 7.138
+        },
+        "negativeParallelismPer1k": {
+          "mean": 0.283,
+          "median": 0,
+          "p10": 0,
+          "p90": 0
+        },
+        "triadsPer1k": {
+          "mean": 3.321,
+          "median": 0,
+          "p10": 0,
+          "p90": 9.208
+        },
+        "formulaicClichesPer1k": {
+          "mean": 0.411,
+          "median": 0,
+          "p10": 0,
+          "p90": 0
+        },
+        "emDashesPer1k": {
+          "mean": 0.18,
+          "median": 0,
+          "p10": 0,
+          "p90": 0
+        },
+        "passiveIndicatorPer1k": {
+          "mean": 4.906,
+          "median": 4.165,
+          "p10": 0,
+          "p90": 13.874
+        },
+        "firstPersonPer1k": {
+          "mean": 16.642,
+          "median": 16.69,
+          "p10": 0,
+          "p90": 29.286
+        },
+        "aiRiskScore": {
+          "mean": 34.344,
+          "median": 28.1,
+          "p10": 13.27,
+          "p90": 60.65
+        }
+      },
+      "tier1ExcessSurgeRatio": 12.24
+    },
+    "medicine": {
+      "label": "Medicine & Biomedical Sciences",
+      "pre2022Human": {
+        "sampleCount": 50,
+        "totalWords": 14060,
+        "sentMean": {
+          "mean": 24.51,
+          "median": 24.915,
+          "p10": 18.016,
+          "p90": 29.202
+        },
+        "sentCV": {
+          "mean": 0.432,
+          "median": 0.404,
+          "p10": 0.27,
+          "p90": 0.635
+        },
+        "adjBurstiness": {
+          "mean": 0.518,
+          "median": 0.499,
+          "p10": 0.316,
+          "p90": 0.692
+        },
+        "shortSentPct": {
+          "mean": 10.268,
+          "median": 9.1,
+          "p10": 0,
+          "p90": 25
+        },
+        "longSentPct": {
+          "mean": 28.334,
+          "median": 27.3,
+          "p10": 0,
+          "p90": 50.45
+        },
+        "mattr50": {
+          "mean": 0.754,
+          "median": 0.754,
+          "p10": 0.679,
+          "p90": 0.819
+        },
+        "avgWordLen": {
+          "mean": 5.714,
+          "median": 5.69,
+          "p10": 5.231,
+          "p90": 6.128
+        },
+        "tier1ExcessPer1kPooled": 0.213,
+        "tier2InflatedPer1kPooled": 0.782,
+        "pctDocsWithTier1Excess": 4,
+        "explicitTransitionsPer1k": {
+          "mean": 1.062,
+          "median": 0,
+          "p10": 0,
+          "p90": 3.738
+        },
+        "trailingParticiplePer1k": {
+          "mean": 0.287,
+          "median": 0,
+          "p10": 0,
+          "p90": 0
+        },
+        "negativeParallelismPer1k": {
+          "mean": 0,
+          "median": 0,
+          "p10": 0,
+          "p90": 0
+        },
+        "triadsPer1k": {
+          "mean": 3.438,
+          "median": 2.985,
+          "p10": 0,
+          "p90": 9.382
+        },
+        "formulaicClichesPer1k": {
+          "mean": 0,
+          "median": 0,
+          "p10": 0,
+          "p90": 0
+        },
+        "emDashesPer1k": {
+          "mean": 0.221,
+          "median": 0,
+          "p10": 0,
+          "p90": 0
+        },
+        "passiveIndicatorPer1k": {
+          "mean": 11.711,
+          "median": 10.61,
+          "p10": 2.326,
+          "p90": 24.559
+        },
+        "firstPersonPer1k": {
+          "mean": 4.806,
+          "median": 3.26,
+          "p10": 0,
+          "p90": 16.58
+        },
+        "aiRiskScore": {
+          "mean": 14.598,
+          "median": 6.5,
+          "p10": 0,
+          "p90": 34.83
+        }
+      },
+      "post2024Recent": {
+        "sampleCount": 50,
+        "totalWords": 14128,
+        "sentMean": {
+          "mean": 32.783,
+          "median": 26.785,
+          "p10": 21.392,
+          "p90": 34.776
+        },
+        "sentCV": {
+          "mean": 0.412,
+          "median": 0.413,
+          "p10": 0.198,
+          "p90": 0.635
+        },
+        "adjBurstiness": {
+          "mean": 0.495,
+          "median": 0.472,
+          "p10": 0.251,
+          "p90": 0.761
+        },
+        "shortSentPct": {
+          "mean": 6.436,
+          "median": 0,
+          "p10": 0,
+          "p90": 17.66
+        },
+        "longSentPct": {
+          "mean": 35.66,
+          "median": 33.3,
+          "p10": 15.4,
+          "p90": 50
+        },
+        "mattr50": {
+          "mean": 0.768,
+          "median": 0.77,
+          "p10": 0.688,
+          "p90": 0.856
+        },
+        "avgWordLen": {
+          "mean": 5.835,
+          "median": 5.815,
+          "p10": 5.368,
+          "p90": 6.382
+        },
+        "tier1ExcessPer1kPooled": 0.142,
+        "tier2InflatedPer1kPooled": 1.133,
+        "pctDocsWithTier1Excess": 4,
+        "explicitTransitionsPer1k": {
+          "mean": 1.164,
+          "median": 0,
+          "p10": 0,
+          "p90": 5.986
+        },
+        "trailingParticiplePer1k": {
+          "mean": 1.018,
+          "median": 0,
+          "p10": 0,
+          "p90": 4.267
+        },
+        "negativeParallelismPer1k": {
+          "mean": 0,
+          "median": 0,
+          "p10": 0,
+          "p90": 0
+        },
+        "triadsPer1k": {
+          "mean": 4.202,
+          "median": 0,
+          "p10": 0,
+          "p90": 12.19
+        },
+        "formulaicClichesPer1k": {
+          "mean": 0.064,
+          "median": 0,
+          "p10": 0,
+          "p90": 0
+        },
+        "emDashesPer1k": {
+          "mean": 0.154,
+          "median": 0,
+          "p10": 0,
+          "p90": 0
+        },
+        "passiveIndicatorPer1k": {
+          "mean": 9.993,
+          "median": 7.475,
+          "p10": 0,
+          "p90": 23.082
+        },
+        "firstPersonPer1k": {
+          "mean": 3.993,
+          "median": 2.87,
+          "p10": 0,
+          "p90": 10.495
+        },
+        "aiRiskScore": {
+          "mean": 14.878,
+          "median": 7.45,
+          "p10": 0,
+          "p90": 36.94
+        }
+      },
+      "tier1ExcessSurgeRatio": 0.67
+    },
+    "economics_business": {
+      "label": "Economics, Business & Finance",
+      "pre2022Human": {
+        "sampleCount": 50,
+        "totalWords": 8155,
+        "sentMean": {
+          "mean": 30.608,
+          "median": 24.1,
+          "p10": 15.929,
+          "p90": 32.703
+        },
+        "sentCV": {
+          "mean": 0.358,
+          "median": 0.34,
+          "p10": 0.168,
+          "p90": 0.539
+        },
+        "adjBurstiness": {
+          "mean": 0.468,
+          "median": 0.462,
+          "p10": 0.207,
+          "p90": 0.814
+        },
+        "shortSentPct": {
+          "mean": 9.354,
+          "median": 0,
+          "p10": 0,
+          "p90": 25
+        },
+        "longSentPct": {
+          "mean": 29.808,
+          "median": 23.2,
+          "p10": 0,
+          "p90": 66.7
+        },
+        "mattr50": {
+          "mean": 0.801,
+          "median": 0.813,
+          "p10": 0.727,
+          "p90": 0.852
+        },
+        "avgWordLen": {
+          "mean": 5.588,
+          "median": 5.61,
+          "p10": 5.14,
+          "p90": 5.962
+        },
+        "tier1ExcessPer1kPooled": 0.123,
+        "tier2InflatedPer1kPooled": 1.104,
+        "pctDocsWithTier1Excess": 2,
+        "explicitTransitionsPer1k": {
+          "mean": 0.662,
+          "median": 0,
+          "p10": 0,
+          "p90": 2.791
+        },
+        "trailingParticiplePer1k": {
+          "mean": 0.208,
+          "median": 0,
+          "p10": 0,
+          "p90": 0
+        },
+        "negativeParallelismPer1k": {
+          "mean": 0,
+          "median": 0,
+          "p10": 0,
+          "p90": 0
+        },
+        "triadsPer1k": {
+          "mean": 2.544,
+          "median": 0,
+          "p10": 0,
+          "p90": 9.91
+        },
+        "formulaicClichesPer1k": {
+          "mean": 0,
+          "median": 0,
+          "p10": 0,
+          "p90": 0
+        },
+        "emDashesPer1k": {
+          "mean": 1.338,
+          "median": 0,
+          "p10": 0,
+          "p90": 4.787
+        },
+        "passiveIndicatorPer1k": {
+          "mean": 7.464,
+          "median": 4.76,
+          "p10": 0,
+          "p90": 19.094
+        },
+        "firstPersonPer1k": {
+          "mean": 21.102,
+          "median": 20.725,
+          "p10": 2.637,
+          "p90": 40.124
+        },
+        "aiRiskScore": {
+          "mean": 14.108,
+          "median": 14,
+          "p10": 0,
+          "p90": 37.06
+        }
+      },
+      "post2024Recent": {
+        "sampleCount": 50,
+        "totalWords": 9464,
+        "sentMean": {
+          "mean": 27.761,
+          "median": 23.96,
+          "p10": 19.833,
+          "p90": 31.173
+        },
+        "sentCV": {
+          "mean": 0.366,
+          "median": 0.352,
+          "p10": 0.228,
+          "p90": 0.535
+        },
+        "adjBurstiness": {
+          "mean": 0.465,
+          "median": 0.453,
+          "p10": 0.27,
+          "p90": 0.702
+        },
+        "shortSentPct": {
+          "mean": 6.56,
+          "median": 0,
+          "p10": 0,
+          "p90": 17.03
+        },
+        "longSentPct": {
+          "mean": 28.9,
+          "median": 27.95,
+          "p10": 6.03,
+          "p90": 50.56
+        },
+        "mattr50": {
+          "mean": 0.809,
+          "median": 0.81,
+          "p10": 0.752,
+          "p90": 0.868
+        },
+        "avgWordLen": {
+          "mean": 5.934,
+          "median": 5.975,
+          "p10": 5.279,
+          "p90": 6.613
+        },
+        "tier1ExcessPer1kPooled": 2.008,
+        "tier2InflatedPer1kPooled": 4.121,
+        "pctDocsWithTier1Excess": 18,
+        "explicitTransitionsPer1k": {
+          "mean": 1.638,
+          "median": 0,
+          "p10": 0,
+          "p90": 6.955
+        },
+        "trailingParticiplePer1k": {
+          "mean": 1.753,
+          "median": 0,
+          "p10": 0,
+          "p90": 9.383
+        },
+        "negativeParallelismPer1k": {
+          "mean": 0.298,
+          "median": 0,
+          "p10": 0,
+          "p90": 0
+        },
+        "triadsPer1k": {
+          "mean": 2.573,
+          "median": 0,
+          "p10": 0,
+          "p90": 10.195
+        },
+        "formulaicClichesPer1k": {
+          "mean": 0.232,
+          "median": 0,
+          "p10": 0,
+          "p90": 0
+        },
+        "emDashesPer1k": {
+          "mean": 1.363,
+          "median": 0,
+          "p10": 0,
+          "p90": 6.611
+        },
+        "passiveIndicatorPer1k": {
+          "mean": 5.196,
+          "median": 1.59,
+          "p10": 0,
+          "p90": 12.998
+        },
+        "firstPersonPer1k": {
+          "mean": 15.528,
+          "median": 12.485,
+          "p10": 0,
+          "p90": 35.877
+        },
+        "aiRiskScore": {
+          "mean": 25.034,
+          "median": 18.9,
+          "p10": 6,
+          "p90": 57.31
+        }
+      },
+      "tier1ExcessSurgeRatio": 16.33
+    },
+    "psychology_social": {
+      "label": "Psychology & Social Sciences",
+      "pre2022Human": {
+        "sampleCount": 50,
+        "totalWords": 11523,
+        "sentMean": {
+          "mean": 31.818,
+          "median": 24.285,
+          "p10": 19.311,
+          "p90": 37.425
+        },
+        "sentCV": {
+          "mean": 0.433,
+          "median": 0.429,
+          "p10": 0.226,
+          "p90": 0.609
+        },
+        "adjBurstiness": {
+          "mean": 0.511,
+          "median": 0.511,
+          "p10": 0.291,
+          "p90": 0.731
+        },
+        "shortSentPct": {
+          "mean": 8.06,
+          "median": 6.9,
+          "p10": 0,
+          "p90": 22.33
+        },
+        "longSentPct": {
+          "mean": 34.178,
+          "median": 28.65,
+          "p10": 9.91,
+          "p90": 60.67
+        },
+        "mattr50": {
+          "mean": 0.782,
+          "median": 0.787,
+          "p10": 0.733,
+          "p90": 0.821
+        },
+        "avgWordLen": {
+          "mean": 5.841,
+          "median": 5.76,
+          "p10": 5.48,
+          "p90": 6.401
+        },
+        "tier1ExcessPer1kPooled": 0.434,
+        "tier2InflatedPer1kPooled": 1.215,
+        "pctDocsWithTier1Excess": 8,
+        "explicitTransitionsPer1k": {
+          "mean": 1.306,
+          "median": 0,
+          "p10": 0,
+          "p90": 5.116
+        },
+        "trailingParticiplePer1k": {
+          "mean": 0.134,
+          "median": 0,
+          "p10": 0,
+          "p90": 0
+        },
+        "negativeParallelismPer1k": {
+          "mean": 0.089,
+          "median": 0,
+          "p10": 0,
+          "p90": 0
+        },
+        "triadsPer1k": {
+          "mean": 4.509,
+          "median": 2.37,
+          "p10": 0,
+          "p90": 10.608
+        },
+        "formulaicClichesPer1k": {
+          "mean": 0.122,
+          "median": 0,
+          "p10": 0,
+          "p90": 0
+        },
+        "emDashesPer1k": {
+          "mean": 0.229,
+          "median": 0,
+          "p10": 0,
+          "p90": 0
+        },
+        "passiveIndicatorPer1k": {
+          "mean": 10.193,
+          "median": 9.76,
+          "p10": 0,
+          "p90": 18.681
+        },
+        "firstPersonPer1k": {
+          "mean": 10.377,
+          "median": 5.875,
+          "p10": 0,
+          "p90": 30.356
+        },
+        "aiRiskScore": {
+          "mean": 12.632,
+          "median": 7.3,
+          "p10": 0,
+          "p90": 31.52
+        }
+      },
+      "post2024Recent": {
+        "sampleCount": 50,
+        "totalWords": 11039,
+        "sentMean": {
+          "mean": 22.186,
+          "median": 20.95,
+          "p10": 17.206,
+          "p90": 27.703
+        },
+        "sentCV": {
+          "mean": 0.382,
+          "median": 0.365,
+          "p10": 0.27,
+          "p90": 0.501
+        },
+        "adjBurstiness": {
+          "mean": 0.455,
+          "median": 0.459,
+          "p10": 0.303,
+          "p90": 0.595
+        },
+        "shortSentPct": {
+          "mean": 7.212,
+          "median": 3.35,
+          "p10": 0,
+          "p90": 18.38
+        },
+        "longSentPct": {
+          "mean": 22.102,
+          "median": 20,
+          "p10": 0,
+          "p90": 44.96
+        },
+        "mattr50": {
+          "mean": 0.783,
+          "median": 0.79,
+          "p10": 0.717,
+          "p90": 0.84
+        },
+        "avgWordLen": {
+          "mean": 5.952,
+          "median": 6.015,
+          "p10": 5.486,
+          "p90": 6.461
+        },
+        "tier1ExcessPer1kPooled": 0.815,
+        "tier2InflatedPer1kPooled": 2.627,
+        "pctDocsWithTier1Excess": 16,
+        "explicitTransitionsPer1k": {
+          "mean": 1.842,
+          "median": 0,
+          "p10": 0,
+          "p90": 8.39
+        },
+        "trailingParticiplePer1k": {
+          "mean": 0.74,
+          "median": 0,
+          "p10": 0,
+          "p90": 3.511
+        },
+        "negativeParallelismPer1k": {
+          "mean": 0,
+          "median": 0,
+          "p10": 0,
+          "p90": 0
+        },
+        "triadsPer1k": {
+          "mean": 4.423,
+          "median": 0,
+          "p10": 0,
+          "p90": 12.739
+        },
+        "formulaicClichesPer1k": {
+          "mean": 0.051,
+          "median": 0,
+          "p10": 0,
+          "p90": 0
+        },
+        "emDashesPer1k": {
+          "mean": 0.229,
+          "median": 0,
+          "p10": 0,
+          "p90": 0
+        },
+        "passiveIndicatorPer1k": {
+          "mean": 10.659,
+          "median": 9.75,
+          "p10": 0,
+          "p90": 22.252
+        },
+        "firstPersonPer1k": {
+          "mean": 10.104,
+          "median": 8.77,
+          "p10": 0,
+          "p90": 24.691
+        },
+        "aiRiskScore": {
+          "mean": 18.534,
+          "median": 14.2,
+          "p10": 5.67,
+          "p90": 36.92
+        }
+      },
+      "tier1ExcessSurgeRatio": 1.88
+    },
+    "humanities_history": {
+      "label": "Arts, History & Humanities",
+      "pre2022Human": {
+        "sampleCount": 50,
+        "totalWords": 9610,
+        "sentMean": {
+          "mean": 27.814,
+          "median": 25.9,
+          "p10": 18.539,
+          "p90": 34.447
+        },
+        "sentCV": {
+          "mean": 0.357,
+          "median": 0.368,
+          "p10": 0.233,
+          "p90": 0.483
+        },
+        "adjBurstiness": {
+          "mean": 0.479,
+          "median": 0.473,
+          "p10": 0.244,
+          "p90": 0.709
+        },
+        "shortSentPct": {
+          "mean": 6.288,
+          "median": 0,
+          "p10": 0,
+          "p90": 16.85
+        },
+        "longSentPct": {
+          "mean": 35.386,
+          "median": 27.95,
+          "p10": 8.19,
+          "p90": 66.7
+        },
+        "mattr50": {
+          "mean": 0.787,
+          "median": 0.791,
+          "p10": 0.747,
+          "p90": 0.83
+        },
+        "avgWordLen": {
+          "mean": 5.747,
+          "median": 5.61,
+          "p10": 5.177,
+          "p90": 6.395
+        },
+        "tier1ExcessPer1kPooled": 0.208,
+        "tier2InflatedPer1kPooled": 2.289,
+        "pctDocsWithTier1Excess": 4,
+        "explicitTransitionsPer1k": {
+          "mean": 0.557,
+          "median": 0,
+          "p10": 0,
+          "p90": 0.3
+        },
+        "trailingParticiplePer1k": {
+          "mean": 0.337,
+          "median": 0,
+          "p10": 0,
+          "p90": 0
+        },
+        "negativeParallelismPer1k": {
+          "mean": 0.23,
+          "median": 0,
+          "p10": 0,
+          "p90": 0
+        },
+        "triadsPer1k": {
+          "mean": 2.711,
+          "median": 0,
+          "p10": 0,
+          "p90": 8.143
+        },
+        "formulaicClichesPer1k": {
+          "mean": 0,
+          "median": 0,
+          "p10": 0,
+          "p90": 0
+        },
+        "emDashesPer1k": {
+          "mean": 0.993,
+          "median": 0,
+          "p10": 0,
+          "p90": 0.382
+        },
+        "passiveIndicatorPer1k": {
+          "mean": 10.51,
+          "median": 7.38,
+          "p10": 0,
+          "p90": 20.855
+        },
+        "firstPersonPer1k": {
+          "mean": 9.818,
+          "median": 5.08,
+          "p10": 0,
+          "p90": 25.126
+        },
+        "aiRiskScore": {
+          "mean": 15.004,
+          "median": 14,
+          "p10": 0,
+          "p90": 32.14
+        }
+      },
+      "post2024Recent": {
+        "sampleCount": 50,
+        "totalWords": 9841,
+        "sentMean": {
+          "mean": 29.261,
+          "median": 24.265,
+          "p10": 19,
+          "p90": 29.907
+        },
+        "sentCV": {
+          "mean": 0.344,
+          "median": 0.315,
+          "p10": 0.171,
+          "p90": 0.536
+        },
+        "adjBurstiness": {
+          "mean": 0.424,
+          "median": 0.332,
+          "p10": 0.188,
+          "p90": 0.738
+        },
+        "shortSentPct": {
+          "mean": 4.256,
+          "median": 0,
+          "p10": 0,
+          "p90": 16.85
+        },
+        "longSentPct": {
+          "mean": 25.62,
+          "median": 22.2,
+          "p10": 0,
+          "p90": 50.71
+        },
+        "mattr50": {
+          "mean": 0.799,
+          "median": 0.798,
+          "p10": 0.744,
+          "p90": 0.849
+        },
+        "avgWordLen": {
+          "mean": 6.094,
+          "median": 6.1,
+          "p10": 5.475,
+          "p90": 6.707
+        },
+        "tier1ExcessPer1kPooled": 1.829,
+        "tier2InflatedPer1kPooled": 2.845,
+        "pctDocsWithTier1Excess": 20,
+        "explicitTransitionsPer1k": {
+          "mean": 1.971,
+          "median": 0,
+          "p10": 0,
+          "p90": 5.75
+        },
+        "trailingParticiplePer1k": {
+          "mean": 1.415,
+          "median": 0,
+          "p10": 0,
+          "p90": 5.524
+        },
+        "negativeParallelismPer1k": {
+          "mean": 0.343,
+          "median": 0,
+          "p10": 0,
+          "p90": 0
+        },
+        "triadsPer1k": {
+          "mean": 3.082,
+          "median": 0,
+          "p10": 0,
+          "p90": 9.935
+        },
+        "formulaicClichesPer1k": {
+          "mean": 0.392,
+          "median": 0,
+          "p10": 0,
+          "p90": 0
+        },
+        "emDashesPer1k": {
+          "mean": 0.486,
+          "median": 0,
+          "p10": 0,
+          "p90": 0
+        },
+        "passiveIndicatorPer1k": {
+          "mean": 7.138,
+          "median": 5.925,
+          "p10": 0,
+          "p90": 17.141
+        },
+        "firstPersonPer1k": {
+          "mean": 5.556,
+          "median": 0,
+          "p10": 0,
+          "p90": 16.827
+        },
+        "aiRiskScore": {
+          "mean": 29.538,
+          "median": 22.85,
+          "p10": 5.46,
+          "p90": 62.66
+        }
+      },
+      "tier1ExcessSurgeRatio": 8.79
+    },
+    "law_policy": {
+      "label": "Law, Political Science & Policy",
+      "pre2022Human": {
+        "sampleCount": 50,
+        "totalWords": 9136,
+        "sentMean": {
+          "mean": 27.002,
+          "median": 25.285,
+          "p10": 19.314,
+          "p90": 34.133
+        },
+        "sentCV": {
+          "mean": 0.391,
+          "median": 0.377,
+          "p10": 0.291,
+          "p90": 0.49
+        },
+        "adjBurstiness": {
+          "mean": 0.477,
+          "median": 0.441,
+          "p10": 0.325,
+          "p90": 0.646
+        },
+        "shortSentPct": {
+          "mean": 4.226,
+          "median": 0,
+          "p10": 0,
+          "p90": 17.03
+        },
+        "longSentPct": {
+          "mean": 36.368,
+          "median": 33.3,
+          "p10": 12.36,
+          "p90": 75
+        },
+        "mattr50": {
+          "mean": 0.777,
+          "median": 0.782,
+          "p10": 0.738,
+          "p90": 0.812
+        },
+        "avgWordLen": {
+          "mean": 5.711,
+          "median": 5.685,
+          "p10": 5.315,
+          "p90": 6.201
+        },
+        "tier1ExcessPer1kPooled": 0.109,
+        "tier2InflatedPer1kPooled": 1.313,
+        "pctDocsWithTier1Excess": 2,
+        "explicitTransitionsPer1k": {
+          "mean": 0.653,
+          "median": 0,
+          "p10": 0,
+          "p90": 0.304
+        },
+        "trailingParticiplePer1k": {
+          "mean": 0.193,
+          "median": 0,
+          "p10": 0,
+          "p90": 0
+        },
+        "negativeParallelismPer1k": {
+          "mean": 0,
+          "median": 0,
+          "p10": 0,
+          "p90": 0
+        },
+        "triadsPer1k": {
+          "mean": 2.488,
+          "median": 0,
+          "p10": 0,
+          "p90": 7.783
+        },
+        "formulaicClichesPer1k": {
+          "mean": 0.121,
+          "median": 0,
+          "p10": 0,
+          "p90": 0
+        },
+        "emDashesPer1k": {
+          "mean": 0.788,
+          "median": 0,
+          "p10": 0,
+          "p90": 0
+        },
+        "passiveIndicatorPer1k": {
+          "mean": 12.63,
+          "median": 11.595,
+          "p10": 0,
+          "p90": 26.148
+        },
+        "firstPersonPer1k": {
+          "mean": 14.112,
+          "median": 12.18,
+          "p10": 0,
+          "p90": 33.218
+        },
+        "aiRiskScore": {
+          "mean": 10.948,
+          "median": 9.35,
+          "p10": 0,
+          "p90": 19.48
+        }
+      },
+      "post2024Recent": {
+        "sampleCount": 50,
+        "totalWords": 10766,
+        "sentMean": {
+          "mean": 27.394,
+          "median": 23.05,
+          "p10": 18.859,
+          "p90": 29.664
+        },
+        "sentCV": {
+          "mean": 0.351,
+          "median": 0.329,
+          "p10": 0.219,
+          "p90": 0.497
+        },
+        "adjBurstiness": {
+          "mean": 0.44,
+          "median": 0.403,
+          "p10": 0.236,
+          "p90": 0.658
+        },
+        "shortSentPct": {
+          "mean": 4.942,
+          "median": 0,
+          "p10": 0,
+          "p90": 14.3
+        },
+        "longSentPct": {
+          "mean": 25.018,
+          "median": 20,
+          "p10": 0,
+          "p90": 51
+        },
+        "mattr50": {
+          "mean": 0.81,
+          "median": 0.817,
+          "p10": 0.753,
+          "p90": 0.857
+        },
+        "avgWordLen": {
+          "mean": 6.074,
+          "median": 6.04,
+          "p10": 5.586,
+          "p90": 6.72
+        },
+        "tier1ExcessPer1kPooled": 1.765,
+        "tier2InflatedPer1kPooled": 5.109,
+        "pctDocsWithTier1Excess": 26,
+        "explicitTransitionsPer1k": {
+          "mean": 1.83,
+          "median": 0,
+          "p10": 0,
+          "p90": 4.983
+        },
+        "trailingParticiplePer1k": {
+          "mean": 3.122,
+          "median": 0,
+          "p10": 0,
+          "p90": 11.202
+        },
+        "negativeParallelismPer1k": {
+          "mean": 0.315,
+          "median": 0,
+          "p10": 0,
+          "p90": 0
+        },
+        "triadsPer1k": {
+          "mean": 4.735,
+          "median": 1.45,
+          "p10": 0,
+          "p90": 12.106
+        },
+        "formulaicClichesPer1k": {
+          "mean": 0.228,
+          "median": 0,
+          "p10": 0,
+          "p90": 0
+        },
+        "emDashesPer1k": {
+          "mean": 0.382,
+          "median": 0,
+          "p10": 0,
+          "p90": 0
+        },
+        "passiveIndicatorPer1k": {
+          "mean": 8.501,
+          "median": 5.74,
+          "p10": 0,
+          "p90": 23.07
+        },
+        "firstPersonPer1k": {
+          "mean": 8.729,
+          "median": 2.13,
+          "p10": 0,
+          "p90": 26.044
+        },
+        "aiRiskScore": {
+          "mean": 33.104,
+          "median": 25.9,
+          "p10": 1.08,
+          "p90": 73.89
+        }
+      },
+      "tier1ExcessSurgeRatio": 16.19
+    }
+  }
+}

@@ -1,0 +1,1 @@
+{"schema_version":"1.0","type":"header","note":"Append one JSON object per flagged detector incident (>15% AI) to drive skill updates. Fields: date, detector, scorePct, sourceModel, persona, discipline, flaggedExcerpt, rootCause, ruleUpdate"}
